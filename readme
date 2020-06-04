@@ -1,0 +1,63 @@
+The graph and error are outputted every time there is a failure, and when the solution is found.
+In order to reproduce these results unzip the code and run solve.out as so.
+
+./solve.out
+
+In order to compile the code, simply run
+
+make
+
+This will create a solve.out file if one does not already exist.  node.h and node.cpp define
+the node class.  test.cpp is the driver to the solution, and recursive_place contains the
+majority of the logic.  shape.h and shape.cpp contain methods for building each indifidual shape.
+
+solve.out Outupt:
+""""""""""""""""""""""""""""""""""""""""
+Error: 16
+
+FFFG____
+_FGGG__H
+_FDG__HH
+_DDDEEEH
+__D_EEEH
+_ADB_CCC
+AAABBBCC
+AAABBBCC
+
+Error: 11
+
+FFFG____
+_FGGG___
+HFDG_III
+HDDDEEEI
+HHD_EEEI
+HADB_CCC
+AAABBBCC
+AAABBBCC
+
+Error: 6
+
+FFFG__JJ
+_FGGG_JJ
+HFDGIIIJ
+HDDDIEEE
+HHD_IEEE
+HADB_CCC
+AAABBBCC
+AAABBBCC
+
+Error: 0
+
+MGFFFJJI
+GGGFJJJI
+HGDFLIII
+HDDDLEEE
+HHDKKEEE
+HADBKCCC
+AAABBBCC
+AAABBBCC
+
+Number of times a piece was placed: 1198
+
+Succeeded
+""""""""""""""""""""""""""""""""""""""""
